@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS-Tricks</title>
+    <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    .header {
+      width: 100%;
+      height: 10vh;
+      background-color: white;
+      border-bottom: 8px solid #A26E17;
+
+    }
+
+    #hamburger {
+      margin-top: 1%;
+      height: 50px;
+      float: left;
+      padding-left: 1%;
+
+    }
+
+    #logo {
+      float: left;
+      margin-top: 1%;
+      height: 50px;
+      padding-left: 1%;
+    }
+
+    #search {
+      float: right;
+      margin: 1%;
+      height: 40px;
+      }
+
+    #searchbar {
+      float: right;
+      margin-top: 11px;
+      width: 18%;
+      height: 5vh;
+    }
+
+    .left-bar {
+      height: 90vh;
+      width: 75%;
+      background-color: white;
+      border: 20px solid #444444;
+      float: left;
+    }
+
+    #content {
+      margin: 40px;
+    }
+
+    #author {
+      background-color: #F3F3F3;
+      font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+      font-size: 20px;
+      color: black;
+      font-weight: lighter;
+
+    }
+
+    #link {
+      float: right;
+      margin: 0;
+      height: 60px;
+      padding-right: 4%;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: "Tungsten A","Tungsten B", impact, sans-serif;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+      font-weight: lighter;
+    }
+
+    .right-bar {
+      height: 90vh;
+      width: 25%;
+      background-color: #EEEEEE;
+      float: right;
+    }
+
+    #get-hired {
+      margin: 3%;
+      height: 20vh;
+
+
+
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img id="hamburger" src="hamburger.png" >
+      <img id="logo" src="logo.png" >
+      <img id="search" src="search.png" >
+      <input id ="searchbar" type="text">
+
+    </div>
+
+    <div class="left-bar">
+      <div id="content">
+      <img id="link" src="link.png" ><h1> Do responsive sites have to be so tall on mobile?</h1>
+      <p><div id="author"> February 22, 2017 BY CHRIS COYIER</div></p>
+      <p>Kevin Vigneault:</p>
+      <p><blockquote>I don't believe that the overall page length itself is inherently problematic. I have noticed though that in many responsive designs, purposeful groupings of content are easy to spot on larger screens, but get muddled when things start to stack on mobile screens.</blockquote></p>
+      <p>This is probably mostly a problem on "content" sites in which you smash things down into the ol' tube of content. I don't mind the tube, but I think Kevin is doing some smart thinking here. There are plenty of different patterns that can happen while tubizing, and it's probably not thought about enough.</p>
+      <p>This site is particularly guilty. A quick document.documentElement.offsetHeight test showed 14749px, more than double the height of an example Kevin pointed out that was a bit excessive.</p>
+    </div></div>
+
+
+    <div class="right-bar">
+      <img id="get-hired" src="get-hired.png" >
+    </div>
+
+
+
+  </body>
+</html>
